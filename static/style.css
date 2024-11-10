@@ -1,0 +1,32 @@
+/* Estilização geral da tabela */
+table {
+    width: 100%; /* A tabela ocupará 100% da largura do container */
+    border-collapse: collapse; /* Remove espaços extras entre as células */
+    margin: 20px 0; /* Espaço acima e abaixo da tabela */
+    font-size: 18px; /* Tamanho da fonte */
+    text-align: left; /* Texto alinhado à esquerda */
+}
+
+/* Estilização dos cabeçalhos da tabela */
+th {
+    background-color: cadetblue; /* Cor de fundo do cabeçalho */
+    color: white; /* Cor do texto do cabeçalho */
+    padding: 12px; /* Espaçamento interno (padding) das células do cabeçalho */
+    text-align: center; /* Centraliza o texto no cabeçalho */
+}
+
+/* Estilização das células de dados */
+td {
+    padding: 12px; /* Espaçamento interno das células de dados */
+    border: 1px solid #ddd; /* Borda fina ao redor das células */
+}
+
+/* Alternar a cor de fundo das linhas */
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Cor de fundo das linhas pares */
+}
+
+/* Adicionar efeito de hover (passar o mouse) nas linhas */
+tr:hover {
+    background-color: #ddd; /* Cor de fundo ao passar o mouse sobre a linha */
+}

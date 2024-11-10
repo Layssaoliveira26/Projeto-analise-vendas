@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Relatórios de Vendas</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Tabela Completa de Vendas</h1>
+    {{ tabela_total|safe }}  <!-- Tabela total de vendas -->
+    <h2>Produtos Mais Vendidos</h2>
+    {{ tabelas_produtos|safe }}  <!-- Tabela de produtos mais vendidos -->
+
+    <h2>Faturamento por Produto</h2>
+    {{ tabela_faturamento|safe }}  <!-- Tabela de faturamento por produto -->
+
+    <h2>Faturamento por Loja</h2>
+    {{ tabela_lojas|safe }}  <!-- Tabela de faturamento por loja -->
+
+    <h2>Gráfico de Faturamento por Loja</h2>
+    {{ grafico|safe }}  <!-- Gráfico de faturamento por loja -->
+</body>
+</html>
